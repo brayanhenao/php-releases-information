@@ -2,7 +2,7 @@ name: Get PHP Versions
 on:
   workflow_dispatch: { }
   schedule:
-    - cron: "0 0 * * *"
+    - cron: 0 * * * *
 
 jobs:
   get-new-versions:
@@ -21,6 +21,8 @@ jobs:
         with:
           message: "Update PHP releases"
           pathspec: "releases.json"
+          committer_name: "Brayan Henao"
+          committer_email: "bhenao@vmware.com"
 
       - name: Push Branch
         if: ${{ steps.commit.outputs.commit_sha != '' }}
