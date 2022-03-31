@@ -3,6 +3,11 @@ on:
   workflow_dispatch: { }
   schedule:
     - cron: 0 * * * *
+  push:
+    branches:
+      - main
+    paths:
+      - releases.json
 
 jobs:
   get-new-versions:
