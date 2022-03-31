@@ -13,9 +13,11 @@ jobs:
 
       - name: Get PHP Versions
         run: |
-          versions=(3 4 5 7 8)
+          versions=($(jq -r 'keys | .[]' releases.json))
+          echo "versions: ${versions[*]}"
           for version in "${versions[@]}"; do
-            curl --silent --show-error --fail --http2 https://www.php.net/releases/index.php?json&version=$version"&max=1000 | jq . > php-4.json
+            curl --silent --show-error --fail --http2 "https://www.php.net/releases/index.php?json&version=$version&max=1000" |
+              jq . >"php-$version.json"
           done
 
       - name: Commit
