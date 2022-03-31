@@ -1,0 +1,29 @@
+name: Get PHP Versions
+on:
+  workflow_dispatch: { }
+  schedule:
+    - cron: "0 0 * * *"
+
+jobs:
+  get-new-versions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Get PHP Versions
+        run: |
+          curl https://www.php.net/releases/index.php?json --http2 > releases.json
+
+      - name: Commit
+        id: commit
+        uses: paketo-buildpacks/github-config/actions/pull-request/create-commit@main
+        with:
+          message: "Update PHP releases"
+          pathspec: "releases.json"
+
+      - name: Push Branch
+        if: ${{ steps.commit.outputs.commit_sha != '' }}
+        uses: paketo-buildpacks/github-config/actions/pull-request/push-branch@main
+        with:
+          branch: main
