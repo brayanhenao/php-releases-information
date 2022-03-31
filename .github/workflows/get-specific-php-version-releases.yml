@@ -1,0 +1,34 @@
+name: Get PHP Releases for each version
+on:
+  workflow_dispatch: { }
+  schedule:
+    - cron: 0 * * * *
+
+jobs:
+  get-new-versions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Get PHP Versions
+        run: |
+          versions=(3 4 5 7 8)
+          for version in "${versions[@]}"; do
+            curl --silent --show-error --fail https://www.php.net/releases/index.php?json&version=4&max=1000 --http2 | jq . > php-4.json
+          done
+
+      - name: Commit
+        id: commit
+        uses: paketo-buildpacks/github-config/actions/pull-request/create-commit@main
+        with:
+          message: "PHP Releases for each version"
+          pathspec: "php-*.json"
+          committer_name: "Brayan Henao"
+          committer_email: "bhenao@vmware.com"
+
+      - name: Push Branch
+        if: ${{ steps.commit.outputs.commit_sha != '' }}
+        uses: paketo-buildpacks/github-config/actions/pull-request/push-branch@main
+        with:
+          branch: main

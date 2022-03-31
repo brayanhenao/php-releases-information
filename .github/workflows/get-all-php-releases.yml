@@ -1,4 +1,4 @@
-name: Get PHP Versions
+name: Get PHP Releases
 on:
   workflow_dispatch: { }
   schedule:
@@ -13,7 +13,7 @@ jobs:
 
       - name: Get PHP Versions
         run: |
-          curl https://www.php.net/releases/index.php?json --http2 > releases.json
+          curl --silent --show-error --fail https://www.php.net/releases/index.php?json --http2 | jq . > releases.json
 
       - name: Commit
         id: commit
