@@ -15,7 +15,7 @@ jobs:
         run: |
           versions=(3 4 5 7 8)
           for version in "${versions[@]}"; do
-            curl --silent --show-error --fail https://www.php.net/releases/index.php?json&version=4&max=1000 --http2 | jq . > php-4.json
+            curl --silent --show-error --fail --http2 https://www.php.net/releases/index.php?json&version=$version"&max=1000 | jq . > php-4.json
           done
 
       - name: Commit
