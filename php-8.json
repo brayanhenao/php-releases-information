@@ -1,28 +1,28 @@
 {
-  "8.1.7": {
+  "8.1.8": {
     "announcement": true,
     "tags": [
       "security"
     ],
-    "date": "09 Jun 2022",
+    "date": "07 Jul 2022",
     "source": [
       {
-        "filename": "php-8.1.7.tar.gz",
-        "name": "PHP 8.1.7 (tar.gz)",
-        "sha256": "5f0b422a117633c86d48d028934b8dc078309d4247e7565ea34b2686189abdd8",
-        "date": "09 Jun 2022"
+        "filename": "php-8.1.8.tar.gz",
+        "name": "PHP 8.1.8 (tar.gz)",
+        "sha256": "889d910558d2492f7f2236921b9bcde620674c8b684ec02d126060f8ca45dc8d",
+        "date": "07 Jul 2022"
       },
       {
-        "filename": "php-8.1.7.tar.bz2",
-        "name": "PHP 8.1.7 (tar.bz2)",
-        "sha256": "b816753eb005511e695d90945c27093c3236cc73db1262656d9fadd73ead7e9d",
-        "date": "09 Jun 2022"
+        "filename": "php-8.1.8.tar.bz2",
+        "name": "PHP 8.1.8 (tar.bz2)",
+        "sha256": "b8815a5a02431453d4261e3598bd1f28516e4c0354f328c12890f257870e4c01",
+        "date": "07 Jul 2022"
       },
       {
-        "filename": "php-8.1.7.tar.xz",
-        "name": "PHP 8.1.7 (tar.xz)",
-        "sha256": "f042322f1b5a9f7c2decb84b7086ef676896c2f7178739b9672afafa964ed0e5",
-        "date": "09 Jun 2022"
+        "filename": "php-8.1.8.tar.xz",
+        "name": "PHP 8.1.8 (tar.xz)",
+        "sha256": "04c065515bc347bc68e0bb1ac7182669a98a731e4a17727e5731650ad3d8de4c",
+        "date": "07 Jul 2022"
       }
     ]
   },
@@ -50,6 +50,36 @@
         "date": "07 Jul 2022"
       }
     ]
+  },
+  "8.1.7": {
+    "announcement": {
+      "English": "/releases/8_1_7.php"
+    },
+    "tags": [
+      "security"
+    ],
+    "date": "09 Jun 2022",
+    "source": [
+      {
+        "filename": "php-8.1.7.tar.gz",
+        "name": "PHP 8.1.7 (tar.gz)",
+        "sha256": "5f0b422a117633c86d48d028934b8dc078309d4247e7565ea34b2686189abdd8",
+        "date": "09 Jun 2022"
+      },
+      {
+        "filename": "php-8.1.7.tar.bz2",
+        "name": "PHP 8.1.7 (tar.bz2)",
+        "sha256": "b816753eb005511e695d90945c27093c3236cc73db1262656d9fadd73ead7e9d",
+        "date": "09 Jun 2022"
+      },
+      {
+        "filename": "php-8.1.7.tar.xz",
+        "name": "PHP 8.1.7 (tar.xz)",
+        "sha256": "f042322f1b5a9f7c2decb84b7086ef676896c2f7178739b9672afafa964ed0e5",
+        "date": "09 Jun 2022"
+      }
+    ],
+    "museum": false
   },
   "8.0.20": {
     "announcement": {
