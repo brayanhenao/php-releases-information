@@ -56,9 +56,7 @@
       }
     ],
     "version": "7.4.33",
-    "supported_versions": [
-      "7.4"
-    ]
+    "supported_versions": []
   },
   "5": {
     "announcement": {
