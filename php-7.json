@@ -1,6 +1,8 @@
 {
   "7.4.33": {
-    "announcement": true,
+    "announcement": {
+      "English": "/releases/7_4_33.php"
+    },
     "tags": [
       "security"
     ],
@@ -24,7 +26,8 @@
         "sha256": "924846abf93bc613815c55dd3f5809377813ac62a9ec4eb3778675b82a27b927",
         "date": "03 Nov 2022"
       }
-    ]
+    ],
+    "museum": false
   },
   "7.4.32": {
     "announcement": {
