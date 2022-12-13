@@ -31,7 +31,9 @@
     ]
   },
   "7": {
-    "announcement": true,
+    "announcement": {
+      "English": "/releases/7_4_33.php"
+    },
     "tags": [
       "security"
     ],
@@ -56,6 +58,7 @@
         "date": "03 Nov 2022"
       }
     ],
+    "museum": false,
     "version": "7.4.33",
     "supported_versions": []
   },
