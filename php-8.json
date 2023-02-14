@@ -49,8 +49,37 @@
       }
     ]
   },
-  "8.0.27": {
+  "8.0.28": {
     "announcement": true,
+    "tags": [
+      "security"
+    ],
+    "date": "14 Feb 2023",
+    "source": [
+      {
+        "filename": "php-8.0.28.tar.gz",
+        "name": "PHP 8.0.28 (tar.gz)",
+        "sha256": "7432184eae01e4e8e39f03f80e8ec0ca2c8bfebc56e9a7b983541ca8805df22f",
+        "date": "14 Feb 2023"
+      },
+      {
+        "filename": "php-8.0.28.tar.bz2",
+        "name": "PHP 8.0.28 (tar.bz2)",
+        "sha256": "9d5e74935c900e3b9c7b6bc740596b71933630eb9f63717c0c4923d8c788c62e",
+        "date": "14 Feb 2023"
+      },
+      {
+        "filename": "php-8.0.28.tar.xz",
+        "name": "PHP 8.0.28 (tar.xz)",
+        "sha256": "5e07278a1f315a67d36a676c01343ca2d4da5ec5bdb15d018e4248b3012bc0cd",
+        "date": "14 Feb 2023"
+      }
+    ]
+  },
+  "8.0.27": {
+    "announcement": {
+      "English": "/releases/8_0_27.php"
+    },
     "tags": [
       "security"
     ],
@@ -74,7 +103,8 @@
         "sha256": "f942cbfe2f7bacbb8039fb79bbec41c76ea779ac5c8157f21e1e0c1b28a5fc3a",
         "date": "05 Jan 2023"
       }
-    ]
+    ],
+    "museum": false
   },
   "8.1.14": {
     "announcement": {
