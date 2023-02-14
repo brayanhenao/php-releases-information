@@ -1,26 +1,28 @@
 {
-  "8.2.2": {
+  "8.2.3": {
     "announcement": true,
-    "tags": [],
-    "date": "02 Feb 2023",
+    "tags": [
+      "security"
+    ],
+    "date": "14 Feb 2023",
     "source": [
       {
-        "filename": "php-8.2.2.tar.gz",
-        "name": "PHP 8.2.2 (tar.gz)",
-        "sha256": "d82dda50356cebf6b6e14dbb576b14bc8b85f0f4476a787f0f50611f11eb37d2",
-        "date": "02 Feb 2023"
+        "filename": "php-8.2.3.tar.gz",
+        "name": "PHP 8.2.3 (tar.gz)",
+        "sha256": "7c475bcbe61d28b6878604b1b6f387f39d1a63b5f21fa8156fd7aa615d43e259",
+        "date": "14 Feb 2023"
       },
       {
-        "filename": "php-8.2.2.tar.bz2",
-        "name": "PHP 8.2.2 (tar.bz2)",
-        "sha256": "f5223a5274eda8b40c19e47de0de4678c65d64401ccf710e2464962eb8136804",
-        "date": "02 Feb 2023"
+        "filename": "php-8.2.3.tar.bz2",
+        "name": "PHP 8.2.3 (tar.bz2)",
+        "sha256": "87bb58865f38f5e2941813029152cea2102fe2961bb4d68b88f831ddd0548d0f",
+        "date": "14 Feb 2023"
       },
       {
-        "filename": "php-8.2.2.tar.xz",
-        "name": "PHP 8.2.2 (tar.xz)",
-        "sha256": "bdc4aa38e652bac86039601840bae01c0c3653972eaa6f9f93d5f71953a7ee33",
-        "date": "02 Feb 2023"
+        "filename": "php-8.2.3.tar.xz",
+        "name": "PHP 8.2.3 (tar.xz)",
+        "sha256": "b9b566686e351125d67568a33291650eb8dfa26614d205d70d82e6e92613d457",
+        "date": "14 Feb 2023"
       }
     ]
   },
@@ -75,6 +77,34 @@
         "date": "14 Feb 2023"
       }
     ]
+  },
+  "8.2.2": {
+    "announcement": {
+      "English": "/releases/8_2_2.php"
+    },
+    "tags": [],
+    "date": "02 Feb 2023",
+    "source": [
+      {
+        "filename": "php-8.2.2.tar.gz",
+        "name": "PHP 8.2.2 (tar.gz)",
+        "sha256": "d82dda50356cebf6b6e14dbb576b14bc8b85f0f4476a787f0f50611f11eb37d2",
+        "date": "02 Feb 2023"
+      },
+      {
+        "filename": "php-8.2.2.tar.bz2",
+        "name": "PHP 8.2.2 (tar.bz2)",
+        "sha256": "f5223a5274eda8b40c19e47de0de4678c65d64401ccf710e2464962eb8136804",
+        "date": "02 Feb 2023"
+      },
+      {
+        "filename": "php-8.2.2.tar.xz",
+        "name": "PHP 8.2.2 (tar.xz)",
+        "sha256": "bdc4aa38e652bac86039601840bae01c0c3653972eaa6f9f93d5f71953a7ee33",
+        "date": "02 Feb 2023"
+      }
+    ],
+    "museum": false
   },
   "8.0.27": {
     "announcement": {
