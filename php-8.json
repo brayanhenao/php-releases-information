@@ -1,6 +1,8 @@
 {
   "8.2.10": {
-    "announcement": true,
+    "announcement": {
+      "English": "/releases/8_2_10.php"
+    },
     "tags": [],
     "date": "31 Aug 2023",
     "source": [
@@ -22,7 +24,8 @@
         "sha256": "561dc4acd5386e47f25be76f2c8df6ae854756469159248313bcf276e282fbb3",
         "date": "31 Aug 2023"
       }
-    ]
+    ],
+    "museum": false
   },
   "8.1.23": {
     "announcement": true,
