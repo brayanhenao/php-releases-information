@@ -53,8 +53,37 @@
       }
     ]
   },
-  "8.1.27": {
+  "8.1.28": {
     "announcement": true,
+    "tags": [
+      "security"
+    ],
+    "date": "11 Apr 2024",
+    "source": [
+      {
+        "filename": "php-8.1.28.tar.gz",
+        "name": "PHP 8.1.28 (tar.gz)",
+        "sha256": "a2a9d853f4a4c9ff8631da5dc3a6cec5ab083ef37a214877b0240dcfcdfdefea",
+        "date": "11 Apr 2024"
+      },
+      {
+        "filename": "php-8.1.28.tar.bz2",
+        "name": "PHP 8.1.28 (tar.bz2)",
+        "sha256": "8be450096e0153c47d75384e7dd595cc897f1d53ce0060708ce9589bcc3141ee",
+        "date": "11 Apr 2024"
+      },
+      {
+        "filename": "php-8.1.28.tar.xz",
+        "name": "PHP 8.1.28 (tar.xz)",
+        "sha256": "95d0b2e9466108fd750dab5c30a09e5c67f5ad2cb3b1ffb3625a038a755ad080",
+        "date": "11 Apr 2024"
+      }
+    ]
+  },
+  "8.1.27": {
+    "announcement": {
+      "English": "/releases/8_1_27.php"
+    },
     "tags": [],
     "date": "21 Dec 2023",
     "source": [
@@ -76,7 +105,8 @@
         "sha256": "479e65c3f05714d4aace1370e617d78e49e996ec7a7579a5be47535be61f0658",
         "date": "21 Dec 2023"
       }
-    ]
+    ],
+    "museum": false
   },
   "8.3.4": {
     "announcement": {
